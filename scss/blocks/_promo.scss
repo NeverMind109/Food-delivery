@@ -1,0 +1,28 @@
+.promo {
+    &__wrapper {
+        box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+        background: #FFF1B8 url('../img/promo-background.png') no-repeat top right / 600px;
+        border-radius: 10px;
+        padding: 68px 70px;
+    }
+    &__title {
+        margin: 0;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 39px;
+        line-height: 46px;
+        color: #302C34;
+        &--margin-2 {
+            margin-bottom: 15px;
+        }
+    }
+    &__text {
+        max-width: 538px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        color: #302C34;
+        margin: 0;
+    }
+}

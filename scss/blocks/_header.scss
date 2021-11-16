@@ -32,6 +32,9 @@
     &__buttons {
         display: flex;
     }
+    &__icon {
+        margin-right: 6px;
+    }
     &__login {
         border: 1px solid $blue-button;
         background-color: $blue-button;
@@ -40,7 +43,7 @@
             margin-right: 5px;
         }
     }
-    &__shopping-busket {
+    &__shopping-cart {
         border: 1px solid #D9D9D9;
         background-color: $white-button;
         color: #595959;
