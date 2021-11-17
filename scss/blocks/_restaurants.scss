@@ -1,0 +1,110 @@
+.restaurants {
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--margin-5 {
+            margin-bottom: 44px;
+        }
+    }
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        color: #000000;
+        margin: 0;
+    }
+    &__food-search {
+        width: 306px;
+        height: 34px;
+        font-size: 16px;
+        line-height: 24px;
+        background-image: url('../img/search-icon.svg');
+        background-position: left 11px center;
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__card {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+        border-radius: 7px;
+        overflow: hidden;
+        &--margin-6 {
+            margin-bottom: 30px;
+        }
+        &-image {
+            width: 384px;
+            height: 250px;
+            object-fit: cover;
+        }
+        &-text {
+            padding: 20px 23px 35px;
+        }
+        &-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-title {
+            margin: 0;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            color: #000000;
+        }
+        &-tag {
+            padding: 1px 8px;
+            background: #262626;
+            border-radius: 2px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        &-info {
+            display: flex;
+            align-items: center;
+        }
+        &-rating {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 32px;
+            color: #FFC107;
+            &-icon {
+                margin-right: 7px;
+            }
+        }
+        &-price, &-category {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 32px;
+            color: #8C8C8C;
+        }
+        &-rating {
+            margin-right: 10px;
+        }
+        &-price {
+            margin-right: 10px;
+            &::after {
+                content: "";
+                width: 5px;
+                height: 5px;
+                background-color: #8C8C8C;
+                display: inline-block;
+                vertical-align: 3px;
+                border-radius: 50%;
+                margin-left: 10px;
+            }
+        }
+    }
+}

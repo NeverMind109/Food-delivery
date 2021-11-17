@@ -3,10 +3,21 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
+    padding-top: 44px;
 }
 .container {
     width: 1200px;
     margin: 0 auto;
+}
+.input {
+    padding-left: 35px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    color: #BFBFBF;
+    font-style: normal;
+    font-weight: normal;
 }
 .button {
     display: flex;
