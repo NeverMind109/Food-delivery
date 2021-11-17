@@ -1,12 +1,9 @@
 .header {
-    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     &--margin-1 {
         margin-bottom: 25px;
-    }
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
     }
     &__main {
         text-decoration: none;
