@@ -9,7 +9,7 @@ body {
 .main {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(1.04%, rgba(245, 245, 245, 0)), to(#F5F5F5));
   background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
-  padding-bottom: 108px; }
+  padding-bottom: 78px; }
 
 .container {
   width: 1200px;
@@ -469,7 +469,8 @@ template {
   border-radius: 7px;
   overflow: hidden;
   -ms-flex-preferred-size: 31%;
-      flex-basis: 31%; }
+      flex-basis: 31%;
+  text-decoration: none; }
   .restaurants__card--margin-6 {
     margin-bottom: 30px; }
   .restaurants__card-image {
@@ -601,6 +602,152 @@ template {
         -ms-flex-align: center;
             align-items: center; }
 
+.restaurants__restaurant-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .restaurants__restaurant-heading--margin-5 {
+    margin-bottom: 44px; }
+.restaurants__restaurant-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+  margin: 0; }
+.restaurants__restaurant-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+.restaurants__restaurant-rating {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFC107; }
+  .restaurants__restaurant-rating-icon {
+    margin-right: 7px; }
+.restaurants__restaurant-price, .restaurants__restaurant-category {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #8C8C8C; }
+.restaurants__restaurant-rating {
+  margin-right: 10px; }
+.restaurants__restaurant-price {
+  margin-right: 10px; }
+  .restaurants__restaurant-price::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #8C8C8C;
+    display: inline-block;
+    vertical-align: 3px;
+    border-radius: 50%;
+    margin-left: 10px; }
+.restaurants__food-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+.restaurants__food-card {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 7px;
+  overflow: hidden;
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%; }
+  .restaurants__food-card--margin-6 {
+    margin-bottom: 30px; }
+  .restaurants__food-card-image {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .restaurants__food-card-text {
+    padding: 24px 23px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-height: 223px; }
+  .restaurants__food-card-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .restaurants__food-card-title {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000; }
+  .restaurants__food-card-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .restaurants__food-card-ingredients {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #8C8C8C; }
+  .restaurants__food-card-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .restaurants__food-card-buy {
+    border: 1px solid #1890FF;
+    background-color: #1890FF;
+    color: #fff; }
+  .restaurants__food-card-price {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000; }
+
+.restaurant-title {
+  margin-right: 30px; }
+
+.food-card-icon {
+  margin-left: 4px; }
+
+.food-card-price {
+  margin-left: 25px; }
+
 @media (max-width: 1366px) {
   .container {
     max-width: 960px; }
@@ -610,7 +757,9 @@ template {
     background-position-y: 35px; }
 
   .restaurants__card-price, .restaurants__card-category {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .restaurants__food-card-text {
+    min-height: 260px; } }
 @media (max-width: 992px) {
   .container {
     max-width: 750px; }
@@ -632,6 +781,11 @@ template {
   .restaurants__card {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%; }
+  .restaurants__food-card {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%; }
+    .restaurants__food-card-text {
+      min-height: 260px; }
 
   .footer__link {
     font-size: 16px; } }
@@ -706,6 +860,30 @@ template {
     .restaurants__card-rating {
       -ms-flex-preferred-size: auto;
           flex-basis: auto; }
+  .restaurants__food-card-text {
+    min-height: 200px; }
+  .restaurants__food-card-title {
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .restaurants__food-card-ingredients {
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .restaurants__food-card-buttons {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .restaurants__food-card-buy-text {
+    display: none; }
+
+  .food-card-icon {
+    margin-left: 0; }
+
+  .food-card-price {
+    margin-left: 0; }
 
   .footer {
     -ms-flex-wrap: wrap;
@@ -739,17 +917,13 @@ template {
           flex-wrap: wrap; }
       .footer__nav--margin-8 {
         margin: 15px 0; } }
-@media (max-width: 578px) {
+@media (max-width: 390px) {
   .header {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .header__button-text {
       display: none; }
-    .header__buttons {
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
     .header__login--margin-2 {
       margin-right: 20px; }
     .header__icon {
@@ -768,6 +942,27 @@ template {
   .restaurants__title {
     font-size: 20px; }
   .restaurants__card-heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .restaurants__restaurant-heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .restaurants__restaurant-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .restaurants__restaurant-price {
+    margin-right: 0; }
+    .restaurants__restaurant-price::after {
+      display: none; }
+  .restaurants__restaurant-rating {
+    margin-right: 0; }
+  .restaurants__food-card-buttons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

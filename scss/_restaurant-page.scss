@@ -1,0 +1,133 @@
+.restaurants {
+    &__restaurant {
+        &-heading {
+            display: flex;
+            align-items: center;
+            &--margin-5 {
+                margin-bottom: 44px;
+            }
+        }
+        &-title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 42px;
+            color: #000000;
+            margin: 0;
+        }
+        &-info {
+            display: flex;
+            align-items: center;
+        }
+        &-rating {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 32px;
+            color: #FFC107;
+            &-icon {
+                margin-right: 7px;
+            }
+        }
+        &-price, &-category {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 32px;
+            color: #8C8C8C;
+        }
+        &-rating {
+            margin-right: 10px;
+        }
+        &-price {
+            margin-right: 10px;
+            &::after {
+                content: "";
+                width: 5px;
+                height: 5px;
+                background-color: #8C8C8C;
+                display: inline-block;
+                vertical-align: 3px;
+                border-radius: 50%;
+                margin-left: 10px;
+            }
+        }
+    }
+    &__food-cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__food-card {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+        border-radius: 7px;
+        overflow: hidden;
+        flex-basis: 32%;
+        &--margin-6 {
+            margin-bottom: 30px;
+        }
+        &-image {
+            width: 100%;
+            object-fit: cover;
+        }
+        &-text {
+            padding: 24px 23px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 223px;
+        }
+        &-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        &-title {
+            margin: 0;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 32px;
+            color: #000000;
+        }
+        &-info {
+            display: flex;
+            align-items: center;
+        }
+        &-ingredients {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            color: #8C8C8C;
+        }
+        &-buttons {
+            display: flex;
+            align-items: center;
+        }
+        &-buy {
+            border: 1px solid $blue-button;
+            background-color: $blue-button;
+            color: #fff;
+        }
+        &-price {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 32px;
+            color: #000000;
+
+        }
+    }
+}
+.restaurant-title {
+    margin-right: 30px;
+}
+.food-card-icon {
+    margin-left: 4px;
+}
+.food-card-price {
+    margin-left: 25px;
+}
