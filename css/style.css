@@ -602,6 +602,144 @@ template {
         -ms-flex-align: center;
             align-items: center; }
 
+.modal {
+  position: fixed;
+  display: none;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+  .modal--active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .modal-dialog {
+    margin: auto;
+    background: #FFFFFF;
+    border-radius: 5px;
+    max-width: 780px;
+    width: 95%;
+    padding: 40px 45px; }
+    .modal-dialog__header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .modal-dialog__title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 42px;
+      color: #000000;
+      margin: 0; }
+    .modal-dialog__close {
+      border: none;
+      background-color: transparent;
+      padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .modal-dialog__body {
+      padding-top: 45px; }
+    .modal-dialog__row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #D9D9D9; }
+      .modal-dialog__row--margin-9 {
+        margin-bottom: 15px; }
+    .modal-dialog__name {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 32px;
+      color: #000000; }
+    .modal-dialog__price {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 32px;
+      color: #000000; }
+      .modal-dialog__price--margin-10 {
+        margin-right: 47px;
+        margin-left: auto; }
+    .modal-dialog__counter {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .modal-dialog__counter-button {
+        background: #FFFFFF;
+        border: 1px solid #40A9FF;
+        border-radius: 2px;
+        padding: 5px 16px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: #40A9FF;
+        cursor: pointer; }
+    .modal-dialog__amount {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000000; }
+      .modal-dialog__amount--margin-11 {
+        margin: 0 13px 0; }
+    .modal-dialog__footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .modal-dialog__footer--margin-12 {
+        margin: 52px 0 0; }
+    .modal-dialog__final-price {
+      background: #262626;
+      border-radius: 5px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px;
+      color: #FAFAFA;
+      padding: 15px 20px; }
+    .modal-dialog__buttons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .modal-dialog__buy {
+      border: 1px solid #1890FF;
+      background-color: #1890FF;
+      color: #fff; }
+      .modal-dialog__buy--margin-12 {
+        margin-right: 7px; }
+    .modal-dialog__refuse {
+      background-color: #fff;
+      border: 1px solid #D9D9D9; }
+
 .restaurants__restaurant-heading {
   display: -webkit-box;
   display: -ms-flexbox;
