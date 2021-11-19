@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Тануки - доставка еды на дом</title>
 </head>
 <body>
     <div class="container">
         <header class="header header--margin-1">
-            <a href="index.html" class="header__main"><img src="img/logo.jpg" alt="Image: Logo" class=" header__image"></a>
+            <a href="index.html" class="header__main wow animate__animated animate__fadeInDown" data-wow-delay="0.1s"><img src="img/logo.jpg" alt="Image: Logo" class=" header__image"></a>
             <input type="text" placeholder="Адрес доставки" class="header__address-search input address-search">
             <div class="header__buttons">
                 <button class="button header__login header__login--margin-2">
                     <img src="img/user.svg" alt="Icon: Login" class="header__icon">
                     <span class="header__button-text">Войти</span>
                 </button>
-                <button class="button header__shopping-cart">
+                <button class="button header__shopping-cart" id="cart-button">
                     <img src="img/shopping-cart.svg" alt="Icon: Shopping-cart" class="header__icon">
                     <span class="header__button-text">Корзина</span>
                 </button>
@@ -38,7 +39,7 @@
                     </div>
                 </div>
                 <div class="restaurants__food-cards">
-                    <div class="restaurants__food-card restaurants__food-card--margin-6">
+                    <div class="restaurants__food-card restaurants__food-card--margin-6 wow animate__animated animate__slideInUp" data-wow-delay="0.2s">
                         <img src="img/food-card-1.jpg" alt="Image: Food" class="restaurants__food-card-image">
                         <div class="restaurants__food-card-text">
                             <div class="restaurants__food-card-heading">
@@ -56,7 +57,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="restaurants__food-card restaurants__food-card--margin-6">
+                    <div class="restaurants__food-card restaurants__food-card--margin-6 wow animate__animated animate__slideInUp" data-wow-delay="0.4s">
                         <img src="img/food-card-2.jpg" alt="Image: Food" class="restaurants__food-card-image">
                         <div class="restaurants__food-card-text">
                             <div class="restaurants__food-card-heading">
@@ -74,7 +75,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="restaurants__food-card restaurants__food-card--margin-6">
+                    <div class="restaurants__food-card restaurants__food-card--margin-6 wow animate__animated animate__slideInUp" data-wow-delay="0.6s">
                         <img src="img/food-card-3.jpg" alt="Image: Food" class="restaurants__food-card-image">
                         <div class="restaurants__food-card-text">
                             <div class="restaurants__food-card-heading">
@@ -92,7 +93,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="restaurants__food-card restaurants__food-card--margin-6">
+                    <div class="restaurants__food-card restaurants__food-card--margin-6 wow animate__animated animate__slideInUp" data-wow-delay="0.2s">
                         <img src="img/food-card-4.jpg" alt="Image: Food" class="restaurants__food-card-image">
                         <div class="restaurants__food-card-text">
                             <div class="restaurants__food-card-heading">
@@ -110,7 +111,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="restaurants__food-card restaurants__food-card--margin-6">
+                    <div class="restaurants__food-card restaurants__food-card--margin-6 wow animate__animated animate__slideInUp" data-wow-delay="0.4s">
                         <img src="img/food-card-5.jpg" alt="Image: Food" class="restaurants__food-card-image">
                         <div class="restaurants__food-card-text">
                             <div class="restaurants__food-card-heading">
@@ -128,7 +129,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="restaurants__food-card restaurants__food-card--margin-6">
+                    <div class="restaurants__food-card restaurants__food-card--margin-6 wow animate__animated animate__slideInUp" data-wow-delay="0.6s">
                         <img src="img/food-card-6.jpg" alt="Image: Food" class="restaurants__food-card-image">
                         <div class="restaurants__food-card-text">
                             <div class="restaurants__food-card-heading">
@@ -168,11 +169,11 @@
             </div>
         </footer>
     </div>
-    <div class="modal modal">
+    <div class="modal">
         <div class="modal-dialog">
             <div class="modal-dialog__header">
                 <h3 class="modal-dialog__title">Корзина</h3>
-                <button class="modal-dialog__close">
+                <button class="modal-dialog__close close">
                     <img src="img/close.svg" alt="Icon: Close" class="modal-dialog__image">
                 </button>
             </div>
@@ -223,5 +224,7 @@
             </div>
         </div>
     </div>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

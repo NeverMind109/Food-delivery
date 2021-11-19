@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Delivery Food - доставка еды на дом</title>
 </head>
 <body>
     <div class="container">
         <header class="header header--margin-1">
-            <a href="index.html" class="header__main"><img src="img/logo.jpg" alt="Image: Logo" class=" header__image"></a>
+            <a href="index.html" class="header__main wow animate__animated animate__fadeInDown" data-wow-delay="0.1s"><img src="img/logo.jpg" alt="Image: Logo" class=" header__image"></a>
             <input type="text" placeholder="Адрес доставки" class="header__address-search input address-search">
             <div class="header__buttons">
                 <button class="button header__login header__login--margin-2">
@@ -37,7 +38,7 @@
                     <input type="text" placeholder="Поиск блюд и ресторанов" class="restaurants__food-search input">
                 </div>
                 <div class="restaurants__cards">
-                    <a href="restaurant.html" class="restaurants__card restaurants__card--margin-6">
+                    <a href="restaurant.html" class="restaurants__card restaurants__card--margin-6 wow animate__animated animate__slideInUp" data-wow-delay="0.2s">
                         <img src="img/card-1.jpg" alt="Image: Restaurant" class="restaurants__card-image">
                         <div class="restaurants__card-text">
                             <div class="restaurants__card-heading card-heading">
@@ -52,7 +53,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="restaurant.html" class="restaurants__card restaurants__card--margin-6">
+                    <a href="restaurant.html" class="restaurants__card restaurants__card--margin-6 wow animate__animated animate__slideInUp" data-wow-delay="0.4s">
                         <img src="img/card-2.jpg" alt="Image: Restaurant" class="restaurants__card-image">
                         <div class="restaurants__card-text">
                             <div class="restaurants__card-heading card-heading">
@@ -67,7 +68,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="restaurant.html" class="restaurants__card restaurants__card--margin-6">
+                    <a href="restaurant.html" class="restaurants__card restaurants__card--margin-6 wow animate__animated animate__slideInUp" data-wow-delay="0.6s">
                         <img src="img/card-3.jpg" alt="Image: Restaurant" class="restaurants__card-image">
                         <div class="restaurants__card-text">
                             <div class="restaurants__card-heading card-heading">
@@ -82,7 +83,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="restaurant.html" class="restaurants__card restaurants__card--margin-6">
+                    <a href="restaurant.html" class="restaurants__card restaurants__card--margin-6 wow animate__animated animate__slideInUp" data-wow-delay="0.2s">
                         <img src="img/card-4.jpg" alt="Image: Restaurant" class="restaurants__card-image">
                         <div class="restaurants__card-text">
                             <div class="restaurants__card-heading card-heading">
@@ -97,7 +98,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="restaurant.html" class="restaurants__card restaurants__card--margin-6">
+                    <a href="restaurant.html" class="restaurants__card restaurants__card--margin-6 wow animate__animated animate__slideInUp" data-wow-delay="0.4s">
                         <img src="img/card-5.jpg" alt="Image: Restaurant" class="restaurants__card-image">
                         <div class="restaurants__card-text">
                             <div class="restaurants__card-heading card-heading">
@@ -112,7 +113,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="restaurant.html" class="restaurants__card restaurants__card--margin-6">
+                    <a href="restaurant.html" class="restaurants__card restaurants__card--margin-6 wow animate__animated animate__slideInUp" data-wow-delay="0.6s">
                         <img src="img/card-6.jpg" alt="Image: Restaurant" class="restaurants__card-image">
                         <div class="restaurants__card-text">
                             <div class="restaurants__card-heading card-heading">
@@ -149,5 +150,7 @@
             </div>
         </footer>
     </div>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
