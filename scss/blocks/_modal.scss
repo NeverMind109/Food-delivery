@@ -122,10 +122,17 @@
             &--margin-12 {
                 margin-right: 7px;
             }
+            &:hover {
+                border: 1px solid blue;
+                background-color: blue;
+            }
         }
         &__refuse {
             background-color: $white-button;
             border: 1px solid #D9D9D9;
+            &:hover {
+                background-color: rgb(228, 226, 226);
+            }
         }
     }
 }

@@ -29,6 +29,9 @@
         font-size: 18px;
         line-height: 21px;
         color: #595959;
+        &:hover {
+            color: #969494;
+        }
     }
     &__social {
         width: 127px;

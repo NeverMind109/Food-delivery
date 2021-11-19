@@ -111,6 +111,10 @@
             border: 1px solid $blue-button;
             background-color: $blue-button;
             color: #fff;
+            &:hover {
+                border: 1px solid blue;
+                background-color: blue;
+            }
         }
         &-price {
             font-style: normal;
